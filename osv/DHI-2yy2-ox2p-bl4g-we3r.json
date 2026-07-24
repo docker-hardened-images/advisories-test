@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.8.0",
+  "id": "DHI-2yy2-ox2p-bl4g-we3r",
+  "modified": "2026-07-24T20:25:31Z",
+  "published": "2026-07-24T20:25:39Z",
+  "upstream": [
+    "DSA-5334-1"
+  ],
+  "summary": "An HTTP Request Forgery issue was discovered in Varnish Cache 5.x and 6.x before 6.0.11, 7.x before 7.1.2, and 7.2.x…",
+  "details": "An HTTP Request Forgery issue was discovered in Varnish Cache 5.x and 6.x before 6.0.11, 7.x before 7.1.2, and 7.2.x before 7.2.1. An attacker may introduce characters through HTTP/2 pseudo-headers that are invalid in the context of an HTTP/1 request line, causing the Varnish server to produce invalid HTTP/1 requests to the backend. This could, in turn, be used to exploit vulnerabilities in a server behind the Varnish server. Note: the 6.0.x LTS series (before 6.0.11) is affected.\n\n---\n- varnish 7.1.1-1.1 (bug https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1023751)\nhttps://varnish-cache.org/security/VSV00011.html\nhttps://github.com/varnishcache/varnish-cache/commit/515a93df894430767073ccd8265497b6b25b54b5",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "curl",
+        "purl": "pkg:apk/dhi/curl?os_distro=alpine&os_name=dhi&os_version=3.23"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "8.5.0-r0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "8.4.0-r0"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://scout.docker.com/v/DHI-2yy2-ox2p-bl4g-we3r"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://security-tracker.debian.org/tracker/CVE-2022-45060"
+    }
+  ]
+}

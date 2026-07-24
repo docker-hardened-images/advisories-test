@@ -1,0 +1,27 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://dhi.io/vex/DHI-2yy2-ox2p-bl4g-we3r.json",
+  "author": "Docker Hardened Images <dhi@docker.com>",
+  "role": "Document Creator",
+  "timestamp": "2026-07-24T20:25:39Z",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "DHI-2yy2-ox2p-bl4g-we3r",
+        "aliases": [
+          "DSA-5334-1"
+        ]
+      },
+      "products": [
+        {
+          "@id": "pkg:apk/dhi/curl@8.4.0-r0?os_distro=alpine&os_name=dhi&os_version=3.23"
+        },
+        {
+          "@id": "pkg:apk/dhi/curl@8.5.0-r0?os_distro=alpine&os_name=dhi&os_version=3.23"
+        }
+      ],
+      "status": "affected"
+    }
+  ]
+}
