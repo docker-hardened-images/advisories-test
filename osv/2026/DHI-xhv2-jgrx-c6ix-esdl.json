@@ -1,0 +1,1287 @@
+{
+  "schema_version": "1.8.0",
+  "id": "DHI-xhv2-jgrx-c6ix-esdl",
+  "modified": "2026-11-10T22:09:25Z",
+  "published": "2026-11-10T22:09:25Z",
+  "upstream": [
+    "CVE-2026-111943"
+  ],
+  "summary": "On most platforms, Go uses the given system root certificates. However, in some narrower cases, the system trust stores…",
+  "details": "On most platforms, Go uses the given system root certificates. However, in some narrower cases, the system trust stores may not be updated without further action. To defend against the narrower set of cases that may remain affected, a denylist was added in crypto/x509 to return an error when calling Verify with any of the known intermediate certificates that are no longer considered to be trustworthy.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-dev",
+        "purl": "pkg:apk/dhi/tailscale-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-fips-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-fips",
+        "purl": "pkg:apk/dhi/tailscale-fips"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-nameserver-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-nameserver-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-nameserver-fips",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-nameserver",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips-dev"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator-fips",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale",
+        "purl": "pkg:apk/dhi/tailscale"
+      },
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://scout.docker.com/v/DHI-xhv2-jgrx-c6ix-esdl"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111943"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-86196.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:86196"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/8/ALSA-2026-86203.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:86203"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/8/ALSA-2026-88188.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:88188"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/8/ALSA-2026-88189.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:88189"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-88354.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:88354"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-89744.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:89744"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/8/ALSA-2026-89760.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:89760"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-90362.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:90362"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-90424.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:90424"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-90462.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:90462"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-91719.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:91719"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-93617.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:93617"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-95518.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95518"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/8/ALSA-2026-95638.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95638"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://security.alpinelinux.org/vuln/CVE-2026-111943"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4042.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-94440"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78667"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78659"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4043.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4049.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78663"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4053.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4054.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4055.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4056.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4063.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4064.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2/ALAS-2026-4069.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-93601"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-93600"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-93599"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-16317"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3322.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3323.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-61801"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3324.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97030"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-94448"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-94439"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3325.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3326.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3327.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3339.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3343.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3344.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3345.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3346.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3347.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3348.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3349.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3350.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3351.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3358.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3359.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3360.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3361.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3362.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3363.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3364.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3378.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://security-tracker.debian.org/tracker/CVE-2026-111943"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://pkg.go.dev/vuln/GO-2026-6809"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-500449.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-500449.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-500450.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-500450.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-500451.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-500451.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-500496.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-500496.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-86093.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-86093.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-86196.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-86196.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-86203.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-86203.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88188.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88188.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88189.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88189.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88262.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88262.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88280.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88280.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88316.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88316.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88336.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88336.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-88354.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-88354.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-89744.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-89744.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-89751.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-89751.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-89752.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-89752.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-89760.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-89760.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-89761.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-89761.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-90362.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-90362.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-90424.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-90424.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-90462.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-90462.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-91138.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-91138.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-91719.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-91719.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-91720.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-91720.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-95518.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-95518.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-95519.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-95519.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/security/cve/CVE-2026-111943"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111943"
+    },
+    {
+      "type": "WEB",
+      "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2026-012"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/golang/go/issues/82345"
+    },
+    {
+      "type": "WEB",
+      "url": "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:86093"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:86196"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:86203"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88188"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88189"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88262"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88280"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88316"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88336"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:88354"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:89744"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:89752"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:89760"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:89761"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:90362"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:90424"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:90462"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:91138"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:91719"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:91720"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:93596"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:93617"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95518"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95519"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95638"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0381"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0381.html"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/rustls/webpki-roots/pull/133"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0382"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0382.html"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/rustls/webpki/pull/546"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0383"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0383.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://ubuntu.com/security/CVE-2026-111943"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2026-111943"
+    }
+  ]
+}
