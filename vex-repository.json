@@ -1,0 +1,15 @@
+{
+  "name": "DHI Staging VEX Validation",
+  "description": "Staging-only pre-cutover OS package output; test trust, not production advisories",
+  "versions": [
+    {
+      "spec_version": "0.1",
+      "locations": [
+        {
+          "url": "https://github.com/docker-hardened-images/advisories-test/archive/refs/heads/validation/pre-cutover-staging-20261118.tar.gz//advisories-test-validation-pre-cutover-staging-20261118"
+        }
+      ],
+      "update_interval": "1h"
+    }
+  ]
+}
