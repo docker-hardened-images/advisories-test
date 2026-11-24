@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
   "id": "DHI-a4v4-nxfh-viy7-6cer",
-  "modified": "2026-11-10T22:09:39Z",
+  "modified": "2026-11-24T06:53:20Z",
   "published": "2026-11-10T22:09:39Z",
   "upstream": [
     "CVE-2026-56866"
@@ -18,9 +18,19 @@
     {
       "package": {
         "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-dev",
-        "purl": "pkg:apk/dhi/tailscale-dev"
+        "name": "tailscale",
+        "purl": "pkg:apk/dhi/tailscale"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -48,6 +58,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -66,9 +78,19 @@
     {
       "package": {
         "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-fips-dev",
-        "purl": "pkg:apk/dhi/tailscale-fips-dev"
+        "name": "tailscale-dev",
+        "purl": "pkg:apk/dhi/tailscale-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -96,6 +118,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -117,6 +141,16 @@
         "name": "tailscale-fips",
         "purl": "pkg:apk/dhi/tailscale-fips"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -144,9 +178,130 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-fips-dev"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-nameserver",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.2-r2"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -165,54 +320,16 @@
         "name": "tailscale-k8s-nameserver-dev",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-dev"
       },
-      "versions": [
-        "1.100.0-r0",
-        "1.100.0-r1",
-        "1.100.0-r2",
-        "1.100.0-r3",
-        "1.100.0-r4",
-        "1.100.0-r5",
-        "1.102.0-r0",
-        "1.102.0-r1",
-        "1.102.2-r0",
-        "1.102.2-r1",
-        "1.102.3-r0",
-        "1.102.3-r1",
-        "1.102.3-r2",
-        "1.102.3-r3",
-        "1.102.3-r4",
-        "1.102.4-r0",
-        "1.102.5-r0",
-        "1.104.0-r0",
-        "1.104.1-r0",
-        "1.104.1-r1",
-        "1.104.1-r2",
-        "1.104.2-r0",
-        "1.104.4-r0",
-        "1.104.4-r1",
-        "1.104.5-r0",
-        "1.104.5-r1",
-        "1.98.1-r0",
-        "1.98.2-r0",
-        "1.98.2-r1",
-        "1.98.2-r2",
-        "1.98.3-r0",
-        "1.98.3-r1",
-        "1.98.3-r2",
-        "1.98.4-r0",
-        "1.98.5-r0",
-        "1.98.5-r1"
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
       ],
-      "database_specific": {
-        "owner_kind": "HSP"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-k8s-nameserver-fips-dev",
-        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips-dev"
-      },
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -240,6 +357,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -261,6 +380,16 @@
         "name": "tailscale-k8s-nameserver-fips",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.2-r2"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -288,6 +417,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -303,54 +435,19 @@
     {
       "package": {
         "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-k8s-nameserver",
-        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver"
+        "name": "tailscale-k8s-nameserver-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips-dev"
       },
-      "versions": [
-        "1.100.0-r0",
-        "1.100.0-r1",
-        "1.100.0-r2",
-        "1.100.0-r3",
-        "1.100.0-r4",
-        "1.100.0-r5",
-        "1.102.0-r0",
-        "1.102.0-r1",
-        "1.102.2-r0",
-        "1.102.2-r1",
-        "1.102.3-r0",
-        "1.102.3-r1",
-        "1.102.3-r2",
-        "1.102.3-r3",
-        "1.102.3-r4",
-        "1.102.4-r0",
-        "1.102.5-r0",
-        "1.104.0-r0",
-        "1.104.1-r0",
-        "1.104.1-r1",
-        "1.104.1-r2",
-        "1.104.2-r0",
-        "1.104.4-r0",
-        "1.104.4-r1",
-        "1.104.5-r0",
-        "1.104.5-r1",
-        "1.98.2-r2",
-        "1.98.3-r0",
-        "1.98.3-r1",
-        "1.98.3-r2",
-        "1.98.4-r0",
-        "1.98.5-r0",
-        "1.98.5-r1"
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
       ],
-      "database_specific": {
-        "owner_kind": "HSP"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-k8s-operator-dev",
-        "purl": "pkg:apk/dhi/tailscale-k8s-operator-dev"
-      },
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -378,102 +475,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
-        "1.98.1-r0",
-        "1.98.2-r0",
-        "1.98.2-r1",
-        "1.98.2-r2",
-        "1.98.3-r0",
-        "1.98.3-r1",
-        "1.98.3-r2",
-        "1.98.4-r0",
-        "1.98.5-r0",
-        "1.98.5-r1"
-      ],
-      "database_specific": {
-        "owner_kind": "HSP"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-k8s-operator-fips-dev",
-        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips-dev"
-      },
-      "versions": [
-        "1.100.0-r0",
-        "1.100.0-r1",
-        "1.100.0-r2",
-        "1.100.0-r3",
-        "1.100.0-r4",
-        "1.100.0-r5",
-        "1.102.0-r0",
-        "1.102.0-r1",
-        "1.102.2-r0",
-        "1.102.2-r1",
-        "1.102.3-r0",
-        "1.102.3-r1",
-        "1.102.3-r2",
-        "1.102.3-r3",
-        "1.102.3-r4",
-        "1.102.4-r0",
-        "1.102.5-r0",
-        "1.104.0-r0",
-        "1.104.1-r0",
-        "1.104.1-r1",
-        "1.104.1-r2",
-        "1.104.2-r0",
-        "1.104.4-r0",
-        "1.104.4-r1",
-        "1.104.5-r0",
-        "1.104.5-r1",
-        "1.98.1-r0",
-        "1.98.2-r0",
-        "1.98.2-r1",
-        "1.98.2-r2",
-        "1.98.3-r0",
-        "1.98.3-r1",
-        "1.98.3-r2",
-        "1.98.4-r0",
-        "1.98.5-r0",
-        "1.98.5-r1"
-      ],
-      "database_specific": {
-        "owner_kind": "HSP"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale-k8s-operator-fips",
-        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips"
-      },
-      "versions": [
-        "1.100.0-r0",
-        "1.100.0-r1",
-        "1.100.0-r2",
-        "1.100.0-r3",
-        "1.100.0-r4",
-        "1.100.0-r5",
-        "1.102.0-r0",
-        "1.102.0-r1",
-        "1.102.2-r0",
-        "1.102.2-r1",
-        "1.102.3-r0",
-        "1.102.3-r1",
-        "1.102.3-r2",
-        "1.102.3-r3",
-        "1.102.3-r4",
-        "1.102.4-r0",
-        "1.102.5-r0",
-        "1.104.0-r0",
-        "1.104.1-r0",
-        "1.104.1-r1",
-        "1.104.1-r2",
-        "1.104.2-r0",
-        "1.104.4-r0",
-        "1.104.4-r1",
-        "1.104.5-r0",
-        "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -495,6 +499,16 @@
         "name": "tailscale-k8s-operator",
         "purl": "pkg:apk/dhi/tailscale-k8s-operator"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -522,6 +536,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -540,9 +556,19 @@
     {
       "package": {
         "ecosystem": "Docker Hardened Images:Alpine:3.23",
-        "name": "tailscale",
-        "purl": "pkg:apk/dhi/tailscale"
+        "name": "tailscale-k8s-operator-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -570,6 +596,130 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator-fips",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
+        "1.98.1-r0",
+        "1.98.2-r0",
+        "1.98.2-r1",
+        "1.98.2-r2",
+        "1.98.3-r0",
+        "1.98.3-r1",
+        "1.98.3-r2",
+        "1.98.4-r0",
+        "1.98.5-r0",
+        "1.98.5-r1"
+      ],
+      "database_specific": {
+        "owner_kind": "HSP"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Docker Hardened Images:Alpine:3.23",
+        "name": "tailscale-k8s-operator-fips-dev",
+        "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips-dev"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.100.0-r0",
+        "1.100.0-r1",
+        "1.100.0-r2",
+        "1.100.0-r3",
+        "1.100.0-r4",
+        "1.100.0-r5",
+        "1.102.0-r0",
+        "1.102.0-r1",
+        "1.102.2-r0",
+        "1.102.2-r1",
+        "1.102.3-r0",
+        "1.102.3-r1",
+        "1.102.3-r2",
+        "1.102.3-r3",
+        "1.102.3-r4",
+        "1.102.4-r0",
+        "1.102.5-r0",
+        "1.104.0-r0",
+        "1.104.1-r0",
+        "1.104.1-r1",
+        "1.104.1-r2",
+        "1.104.2-r0",
+        "1.104.4-r0",
+        "1.104.4-r1",
+        "1.104.5-r0",
+        "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
