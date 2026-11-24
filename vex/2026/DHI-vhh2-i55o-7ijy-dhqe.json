@@ -4,8 +4,8 @@
   "author": "Docker Hardened Images <dhi@docker.com>",
   "role": "Document Creator",
   "timestamp": "2026-11-10T22:09:25Z",
-  "last_updated": "2026-11-24T06:59:54Z",
-  "version": 3,
+  "last_updated": "2026-11-24T07:24:14Z",
+  "version": 4,
   "statements": [
     {
       "vulnerability": {
@@ -98,6 +98,9 @@
         },
         {
           "@id": "pkg:apk/dhi/tailscale-dev@1.104.7-r0?distro=dhi-3.23"
+        },
+        {
+          "@id": "pkg:apk/dhi/tailscale-dev@1.106.0-r0?distro=dhi-3.23"
         },
         {
           "@id": "pkg:apk/dhi/tailscale-dev@1.98.1-r0?distro=dhi-3.23"
@@ -481,6 +484,9 @@
           "@id": "pkg:apk/dhi/tailscale-k8s-nameserver-dev@1.104.7-r0?distro=dhi-3.23"
         },
         {
+          "@id": "pkg:apk/dhi/tailscale-k8s-nameserver-dev@1.106.0-r0?distro=dhi-3.23"
+        },
+        {
           "@id": "pkg:apk/dhi/tailscale-k8s-nameserver-dev@1.98.1-r0?distro=dhi-3.23"
         },
         {
@@ -853,6 +859,9 @@
           "@id": "pkg:apk/dhi/tailscale-k8s-nameserver@1.104.7-r0?distro=dhi-3.23"
         },
         {
+          "@id": "pkg:apk/dhi/tailscale-k8s-nameserver@1.106.0-r0?distro=dhi-3.23"
+        },
+        {
           "@id": "pkg:apk/dhi/tailscale-k8s-nameserver@1.98.2-r2?distro=dhi-3.23"
         },
         {
@@ -967,6 +976,9 @@
         },
         {
           "@id": "pkg:apk/dhi/tailscale-k8s-operator-dev@1.104.7-r0?distro=dhi-3.23"
+        },
+        {
+          "@id": "pkg:apk/dhi/tailscale-k8s-operator-dev@1.106.0-r0?distro=dhi-3.23"
         },
         {
           "@id": "pkg:apk/dhi/tailscale-k8s-operator-dev@1.98.1-r0?distro=dhi-3.23"
@@ -1350,6 +1362,9 @@
           "@id": "pkg:apk/dhi/tailscale-k8s-operator@1.104.7-r0?distro=dhi-3.23"
         },
         {
+          "@id": "pkg:apk/dhi/tailscale-k8s-operator@1.106.0-r0?distro=dhi-3.23"
+        },
+        {
           "@id": "pkg:apk/dhi/tailscale-k8s-operator@1.98.1-r0?distro=dhi-3.23"
         },
         {
@@ -1473,6 +1488,9 @@
         },
         {
           "@id": "pkg:apk/dhi/tailscale@1.104.7-r0?distro=dhi-3.23"
+        },
+        {
+          "@id": "pkg:apk/dhi/tailscale@1.106.0-r0?distro=dhi-3.23"
         },
         {
           "@id": "pkg:apk/dhi/tailscale@1.98.1-r0?distro=dhi-3.23"
