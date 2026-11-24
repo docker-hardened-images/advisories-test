@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
   "id": "DHI-xhv2-jgrx-c6ix-esdl",
-  "modified": "2026-11-10T22:09:25Z",
+  "modified": "2026-11-24T06:59:54Z",
   "published": "2026-11-10T22:09:25Z",
   "upstream": [
     "CVE-2026-111943"
@@ -21,6 +21,16 @@
         "name": "tailscale-dev",
         "purl": "pkg:apk/dhi/tailscale-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -48,6 +58,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -69,6 +81,16 @@
         "name": "tailscale-fips-dev",
         "purl": "pkg:apk/dhi/tailscale-fips-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -96,6 +118,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -117,6 +142,16 @@
         "name": "tailscale-fips",
         "purl": "pkg:apk/dhi/tailscale-fips"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -144,6 +179,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -165,6 +203,16 @@
         "name": "tailscale-k8s-nameserver-dev",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -192,6 +240,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -213,6 +263,16 @@
         "name": "tailscale-k8s-nameserver-fips-dev",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -240,6 +300,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -261,6 +324,16 @@
         "name": "tailscale-k8s-nameserver-fips",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver-fips"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.2-r2"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -288,6 +361,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -306,6 +382,16 @@
         "name": "tailscale-k8s-nameserver",
         "purl": "pkg:apk/dhi/tailscale-k8s-nameserver"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.2-r2"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -333,6 +419,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -351,6 +439,16 @@
         "name": "tailscale-k8s-operator-dev",
         "purl": "pkg:apk/dhi/tailscale-k8s-operator-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -378,6 +476,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -399,6 +499,16 @@
         "name": "tailscale-k8s-operator-fips-dev",
         "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips-dev"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -426,6 +536,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -447,6 +560,16 @@
         "name": "tailscale-k8s-operator-fips",
         "purl": "pkg:apk/dhi/tailscale-k8s-operator-fips"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -474,6 +597,9 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
+        "1.106.0-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -495,6 +621,16 @@
         "name": "tailscale-k8s-operator",
         "purl": "pkg:apk/dhi/tailscale-k8s-operator"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -522,6 +658,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -543,6 +681,16 @@
         "name": "tailscale",
         "purl": "pkg:apk/dhi/tailscale"
       },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.98.1-r0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "1.100.0-r0",
         "1.100.0-r1",
@@ -570,6 +718,8 @@
         "1.104.4-r1",
         "1.104.5-r0",
         "1.104.5-r1",
+        "1.104.6-r0",
+        "1.104.7-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -706,6 +856,30 @@
     {
       "type": "ADVISORY",
       "url": "https://access.redhat.com/errata/RHSA-2026:95638"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-97877.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:97877"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-98502.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:98502"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-98539.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:98539"
     },
     {
       "type": "ADVISORY",
@@ -881,6 +1055,10 @@
     },
     {
       "type": "ADVISORY",
+      "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89090"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://alas.aws.amazon.com/AL2023/ALAS-2026-3361.html"
     },
     {
@@ -906,6 +1084,14 @@
     {
       "type": "ADVISORY",
       "url": "https://pkg.go.dev/vuln/GO-2026-6809"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-100640.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-100640.html"
     },
     {
       "type": "ADVISORY",
@@ -1125,6 +1311,70 @@
     },
     {
       "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-95638.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-95638.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-97877.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-97877.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98086.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98086.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98454.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98454.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98479.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98479.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98502.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98502.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98539.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98539.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98610.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98610.html"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://access.redhat.com/security/cve/CVE-2026-111943"
     },
     {
@@ -1142,6 +1392,22 @@
     {
       "type": "WEB",
       "url": "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100547"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100554"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100639"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100640"
     },
     {
       "type": "ADVISORY",
@@ -1242,6 +1508,30 @@
     {
       "type": "ADVISORY",
       "url": "https://errata.rockylinux.org/RLSA-2026:95638"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:97877"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98086"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98479"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98502"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98539"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98610"
     },
     {
       "type": "ADVISORY",
