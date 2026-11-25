@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
   "id": "DHI-xf4q-rk6s-3dfj-w2nl",
-  "modified": "2026-11-24T07:24:14Z",
+  "modified": "2026-11-25T02:12:18Z",
   "published": "2026-11-10T22:10:05Z",
   "upstream": [
     "CVE-2026-78667"
@@ -61,6 +61,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -122,6 +123,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -183,6 +185,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -244,6 +247,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -305,6 +309,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -363,6 +368,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -424,6 +430,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.2-r2",
         "1.98.3-r0",
         "1.98.3-r1",
@@ -482,6 +489,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -543,6 +551,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -604,6 +613,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -665,6 +675,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -726,6 +737,7 @@
         "1.104.6-r0",
         "1.104.7-r0",
         "1.106.0-r0",
+        "1.106.1-r0",
         "1.98.1-r0",
         "1.98.2-r0",
         "1.98.2-r1",
@@ -750,6 +762,14 @@
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78667"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-102296.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://access.redhat.com/errata/RHSA-2026:102296"
     },
     {
       "type": "ADVISORY",
@@ -997,11 +1017,51 @@
     },
     {
       "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-100547.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-100547.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-100554.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-100554.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-100639.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-100639.html"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://linux.oracle.com/cve/ELSA-2026-100640.html"
     },
     {
       "type": "ADVISORY",
       "url": "https://linux.oracle.com/errata/ELSA-2026-100640.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-102292.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-102292.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-102296.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-102296.html"
     },
     {
       "type": "ADVISORY",
@@ -1157,6 +1217,14 @@
     },
     {
       "type": "ADVISORY",
+      "url": "https://linux.oracle.com/cve/ELSA-2026-98597.html"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://linux.oracle.com/errata/ELSA-2026-98597.html"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://linux.oracle.com/cve/ELSA-2026-98610.html"
     },
     {
@@ -1182,6 +1250,14 @@
     {
       "type": "ADVISORY",
       "url": "https://errata.rockylinux.org/RLSA-2026:100640"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:102292"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://errata.rockylinux.org/RLSA-2026:102296"
     },
     {
       "type": "ADVISORY",
